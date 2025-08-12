@@ -3,13 +3,7 @@ import NavBar from './components/NavBar/NavBar';
 import { Route, Routes } from 'react-router';
 import PokemonDetails from './components/PokemonDetails/PokemonDetails';
 import PokemonList from './components/PokemonList/PokemonList';
-
-// Define a small sample dataset so the app can render
-const pokemon = [
-  { _id: 1, name: 'Bulbasaur', weight: 6.9, height: 0.7 },
-  { _id: 4, name: 'Charmander', weight: 8.5, height: 0.6 },
-  { _id: 7, name: 'Squirtle', weight: 9.0, height: 0.5 },
-];
+import { pokemon } from './data/pokemon';
 
 const App = () => {
   return (
