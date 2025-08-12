@@ -1,3 +1,4 @@
+import { useParams } from 'react-router';
 
 const PokemonDetails = (props) => {
   // Always verify that any props are being passed correctly!
@@ -13,6 +14,11 @@ const PokemonDetails = (props) => {
     poke._id === Number(pokemonId)
   ));
   console.log('Pokemon Object:', singlePokemon)
+
+  // If no pokemon matches the id, render a simple message instead of crashing
+  if (!singlePokemon) {
+    return <p>Pokemon not found.</p>;
+  }
 
 // src/components/PokemonDetails/PokemonDetails.jsx
 
