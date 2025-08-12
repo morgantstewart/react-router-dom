@@ -1,6 +1,6 @@
 
 import NavBar from './components/NavBar/NavBar';
-import { Route, Routes } from 'react-router';
+import { Route, Routes } from 'react-router-dom';
 import PokemonDetails from './components/PokemonDetails/PokemonDetails';
 import PokemonList from './components/PokemonList/PokemonList';
 import { pokemon } from './data/pokemon';

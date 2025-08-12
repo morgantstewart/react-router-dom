@@ -1,4 +1,4 @@
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 
 const PokemonDetails = (props) => {
   // Always verify that any props are being passed correctly!
